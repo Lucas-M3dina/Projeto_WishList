@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\guica\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\guica\\.nuget\\packages"
-    ]
-  }
-}
