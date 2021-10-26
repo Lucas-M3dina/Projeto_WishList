@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace wishlist_webAPI.Controllers
         }
 
 
-        //[Authorize(Roles = "1")]
+        [Authorize]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -36,7 +37,7 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
-        //[Authorize(Roles = "1")]
+        [Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Desejo novoDesejo)
         {
@@ -52,6 +53,8 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
+
+        [Authorize]
         [HttpDelete("{IdDesejo}")]
         public IActionResult Deletar(int IdDesejo)
         {

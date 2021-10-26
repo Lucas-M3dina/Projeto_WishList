@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using wishlist_webAPI.Domains;
@@ -23,7 +25,7 @@ namespace wishlist_webAPI.Controllers
         }
 
 
-        //[Authorize(Roles = "1")]
+        [Authorize]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -36,7 +38,27 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
-        //[Authorize(Roles = "1")]
+
+        [Authorize]
+        [HttpGet("imagem")]
+        public IActionResult getDIR()
+        {
+            try
+            {
+                int idUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                string base64 = _usuarioRepository.ConsultarPerfilDir(idUsuario);
+
+                return Ok(base64);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Usuario novoUsuario)
         {
@@ -52,6 +74,35 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
+
+        [Authorize]
+        [HttpPost("imagem")]
+        public IActionResult postDir(IFormFile arquivo)
+        {
+            try
+            {
+                if (arquivo.Length < 5000) //5MB
+                    return BadRequest(new { mensagem = "O tamanho máximo da imagem foi atingido." });
+
+                string extensao = arquivo.FileName.Split('.').Last();
+
+                if (extensao != "png")
+                    return BadRequest(new { mensagem = "Aceitamos apenas arquivos .png." });
+
+                int idUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                _usuarioRepository.SalvarPerfilDir(arquivo, idUsuario);
+
+                return Ok();
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [Authorize]
         [HttpDelete("{IdUsuario}")]
         public IActionResult Deletar(int IdUsuario)
         {

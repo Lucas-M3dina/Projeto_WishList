@@ -4,5 +4,13 @@
         <name>wishlist_webAPI</name>
     </assembly>
     <members>
+        <member name="M:wishlist_webAPI.Controllers.LoginController.Login(wishlist_webAPI.Domains.Usuario)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+            dominio/api/Login
+        </member>
     </members>
 </doc>
