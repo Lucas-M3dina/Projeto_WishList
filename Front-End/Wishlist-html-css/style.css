@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+p, h1{
+    color: white;
+}
+
+.main-desejos{
+    background-color: #191816;
+    padding: 100px 254px 100px 254px; 
+}  
+
+.textos{
+    margin-bottom: 7em;
+}
+
+.textos h1{
+    text-decoration: underline;
+}
+
+.textos p{
+    margin: 1.4em 0 1.4em 0;
+    width: 60%;
+    letter-spacing: 2px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-user{
+    width: 190px;
+}
+
+.imagem-delete{
+    width: 100px;
+}
+
+.fundo-card{
+    background-color: #7c7776;
+    border-radius: 50px;
+    width: 560px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #3a3730 solid 9px;
+}
+
+.fundo-card p{
+    width: 90%
+}
+
+.card_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4em;
+}
+
+#id{
+    background-color: #7c7776;
+    text-align: center;
+    border: solid #bababa 2px;
+    border-radius: 3px;
+}
+
+#id::placeholder{
+    color: #fff;
+}
