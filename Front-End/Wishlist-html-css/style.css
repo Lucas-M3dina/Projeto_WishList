@@ -9,9 +9,13 @@ p, h1{
     color: white;
 }
 
+button{
+    background-color: unset;
+}
+
 .main-desejos{
     background-color: #191816;
-    padding: 100px 254px 100px 254px; 
+    padding: 100px 200px 100px 200px; 
 }  
 
 .textos{
@@ -39,7 +43,7 @@ p, h1{
 }
 
 .imagem-delete{
-    width: 100px;
+    width: 80px;
 }
 
 .fundo-card{
@@ -73,4 +77,25 @@ p, h1{
 
 #id::placeholder{
     color: #fff;
+}
+
+#descricao{
+    background-color: #7c7776;
+    text-align: center;
+    border: solid #bababa 2px;
+    border-radius: 3px;
+}
+
+#descricao::placeholder{
+    color: #fff;
+}
+
+footer{
+    background-color: #2e2c2c;
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+    color: #3d3b3b;
 }
