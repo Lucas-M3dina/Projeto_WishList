@@ -6,6 +6,7 @@ GO
 
 CREATE TABLE Usuario(
 IdUsuario INT PRIMARY KEY IDENTITY,
+nome VARCHAR(200),
 email VARCHAR(200),
 senha VARCHAR(200),
 );
