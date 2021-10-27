@@ -24,7 +24,7 @@ namespace wishlist_webAPI.Controllers
         }
 
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -37,7 +37,7 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Desejo novoDesejo)
         {
@@ -54,7 +54,7 @@ namespace wishlist_webAPI.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpDelete("{IdDesejo}")]
         public IActionResult Deletar(int IdDesejo)
         {

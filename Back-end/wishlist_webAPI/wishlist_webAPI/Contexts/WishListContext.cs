@@ -25,7 +25,7 @@ namespace wishlist_webAPI.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113D3\\SQLEXPRESS; initial catalog=WishList; user Id=sa; pwd=Senai@132;");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-833QVK4\\SQLEXPRESS; initial catalog=WishList; user Id=sa; pwd=senai@132;");
             }
         }
 

@@ -25,7 +25,7 @@ namespace wishlist_webAPI.Controllers
         }
 
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -58,7 +58,7 @@ namespace wishlist_webAPI.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Usuario novoUsuario)
         {
@@ -75,7 +75,7 @@ namespace wishlist_webAPI.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost("imagem")]
         public IActionResult postDir(IFormFile arquivo)
         {
@@ -86,8 +86,6 @@ namespace wishlist_webAPI.Controllers
 
                 string extensao = arquivo.FileName.Split('.').Last();
 
-                if (extensao != "png")
-                    return BadRequest(new { mensagem = "Aceitamos apenas arquivos .png." });
 
                 int idUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
 
@@ -102,7 +100,7 @@ namespace wishlist_webAPI.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpDelete("{IdUsuario}")]
         public IActionResult Deletar(int IdUsuario)
         {

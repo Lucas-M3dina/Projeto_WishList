@@ -13,6 +13,7 @@ using wishlist_webAPI.Repositores;
 
 namespace wishlist_webAPI.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
