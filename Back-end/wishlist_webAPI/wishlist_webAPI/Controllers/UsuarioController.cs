@@ -24,7 +24,10 @@ namespace wishlist_webAPI.Controllers
             _usuarioRepository = new UsuarioRepository();
         }
 
-
+        /// <summary>
+        /// Lista todos os Usuarios."
+        /// </summary>
+        /// <returns></returns>
         //[Authorize]
         [HttpGet]
         public IActionResult ListarTodos()
@@ -38,7 +41,10 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
-
+        /// <summary>
+        /// Retorna o código da imagem (base64).
+        /// </summary>
+        /// <returns></returns>
         [Authorize]
         [HttpGet("imagem")]
         public IActionResult getDIR()
@@ -57,7 +63,11 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        /// <summary>
+        /// Cadastra um novoUsuario.
+        /// </summary>
+        /// <param name="novoUsuario"></param>
+        /// <returns></returns>
         //[Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Usuario novoUsuario)
@@ -74,7 +84,11 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
-
+        /// <summary>
+        /// Subir a imagem.
+        /// </summary>
+        /// <param name="arquivo"></param>
+        /// <returns></returns>
         //[Authorize]
         [HttpPost("imagem")]
         public IActionResult postDir(IFormFile arquivo)
@@ -99,7 +113,11 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        /// <summary>
+        /// Deleta o Usuario através do Id.
+        /// </summary>
+        /// <param name="IdUsuario"></param>
+        /// <returns></returns>
         //[Authorize]
         [HttpDelete("{IdUsuario}")]
         public IActionResult Deletar(int IdUsuario)

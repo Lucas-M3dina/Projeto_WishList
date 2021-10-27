@@ -7752,19 +7752,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guica\\.nuget\\packages\\": {}
+    "C:\\Users\\45626492836\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guica\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
+      "projectUniqueName": "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
       "projectName": "wishlist_webAPI",
-      "projectPath": "C:\\Users\\guica\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
-      "packagesPath": "C:\\Users\\guica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guica\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\obj\\",
+      "projectPath": "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
+      "packagesPath": "C:\\Users\\45626492836\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\guica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\45626492836\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7843,7 +7843,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

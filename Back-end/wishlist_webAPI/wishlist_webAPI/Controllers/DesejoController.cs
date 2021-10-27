@@ -23,7 +23,10 @@ namespace wishlist_webAPI.Controllers
             _desejoRepository = new DesejoRepository();
         }
 
-
+        /// <summary>
+        /// Lista todos os Desejos.
+        /// </summary>
+        /// <returns></returns>
         //[Authorize]
         [HttpGet]
         public IActionResult ListarTodos()
@@ -37,6 +40,11 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
+        /// <summary>
+        /// Cadastrar um novo Desejo.
+        /// </summary>
+        /// <param name="novoDesejo"></param>
+        /// <returns></returns>
         //[Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Desejo novoDesejo)
@@ -53,7 +61,11 @@ namespace wishlist_webAPI.Controllers
                 return BadRequest(erro);
             }
         }
-
+        /// <summary>
+        /// Deleta o Desejo através do Id.
+        /// </summary>
+        /// <param name="IdDesejo"></param>
+        /// <returns></returns>
         //[Authorize]
         [HttpDelete("{IdDesejo}")]
         public IActionResult Deletar(int IdDesejo)
