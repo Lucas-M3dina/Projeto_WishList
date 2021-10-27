@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj": {}
+    "C:\\Users\\48544763898\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj": {
+    "C:\\Users\\48544763898\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\48544763898\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
         "projectName": "wishlist_webAPI",
-        "projectPath": "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
-        "packagesPath": "C:\\Users\\45626492836\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45626492836\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\obj\\",
+        "projectPath": "C:\\Users\\48544763898\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\wishlist_webAPI.csproj",
+        "packagesPath": "C:\\Users\\48544763898\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48544763898\\Desktop\\Projeto_WishList\\Back-end\\wishlist_webAPI\\wishlist_webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\45626492836\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48544763898\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
