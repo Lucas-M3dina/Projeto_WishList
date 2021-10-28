@@ -25,8 +25,7 @@ namespace wishlist_webAPI.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-833QVK4\\SQLEXPRESS; initial catalog=WishList; user Id=sa; pwd=senai@132;");
+                optionsBuilder.UseSqlServer("Data Source=MARCAUM\\SQLEXPRESS; initial catalog=WishList; user Id=sa; pwd=senai@132;");
             }
         }
 
@@ -37,7 +36,7 @@ namespace wishlist_webAPI.Contexts
             modelBuilder.Entity<Desejo>(entity =>
             {
                 entity.HasKey(e => e.IdDesejo)
-                    .HasName("PK__Desejo__D580C0E689263136");
+                    .HasName("PK__Desejo__D580C0E6BC699631");
 
                 entity.ToTable("Desejo");
 
@@ -49,13 +48,13 @@ namespace wishlist_webAPI.Contexts
                 entity.HasOne(d => d.IdUsuarioNavigation)
                     .WithMany(p => p.Desejos)
                     .HasForeignKey(d => d.IdUsuario)
-                    .HasConstraintName("FK__Desejo__IdUsuari__38996AB5");
+                    .HasConstraintName("FK__Desejo__IdUsuari__267ABA7A");
             });
 
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuario__5B65BF9741DABFB4");
+                    .HasName("PK__Usuario__5B65BF97B298AD96");
 
                 entity.ToTable("Usuario");
 
@@ -63,6 +62,11 @@ namespace wishlist_webAPI.Contexts
                     .HasMaxLength(200)
                     .IsUnicode(false)
                     .HasColumnName("email");
+
+                entity.Property(e => e.Nome)
+                    .HasMaxLength(200)
+                    .IsUnicode(false)
+                    .HasColumnName("nome");
 
                 entity.Property(e => e.Senha)
                     .HasMaxLength(200)

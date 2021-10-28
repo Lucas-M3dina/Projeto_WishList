@@ -1,11 +1,11 @@
 USE WishList;
 GO
 
-INSERT INTO Usuario (email,senha)
-VALUES ('cardoso@gmail.com','senai132'),
-       ('marcaum@gmail.com','dev132'),
-	   ('pedro@gmail.com','fic132'),
-	   ('medina@gmail.com','medina132')
+INSERT INTO Usuario (nome,email,senha)
+VALUES ('Guilherme Cardoso','cardoso@gmail.com','senai132'),
+       ('Marcos Vinícius','marcaum@gmail.com','dev132'),
+	   ('Pedro Henrique','pedro@gmail.com','fic132'),
+	   ('Lucas Medina','medina@gmail.com','medina132')
 GO
 
 INSERT INTO Desejo(IdUsuario,descricao)

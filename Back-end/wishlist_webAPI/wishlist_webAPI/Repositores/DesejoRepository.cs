@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace wishlist_webAPI.Repositores
 
         public List<Desejo> ListarTodos()
         {
-            return ctx.Desejos.ToList();
+            return ctx.Desejos.Include(d => d.IdUsuarioNavigation).ToList();
         }
     }
 }
