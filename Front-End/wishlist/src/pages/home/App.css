@@ -15,8 +15,13 @@ button{
 
 .main-desejos{
   background-color: #191816;
-  padding: 100px 400px; 
+  padding: 100px 0; 
 }  
+
+.container{
+  width: 910px;
+  margin: 0 auto;
+}
 
 .textos{
   margin-bottom: 7em;
@@ -49,7 +54,7 @@ button{
 }
 
 .imagem-delete{
-  width: 80px;
+  width: 46px;
 }
 
 .fundo-card{
@@ -61,6 +66,7 @@ button{
   justify-content: center;
   align-items: center;
   border: #3a3730 solid 9px;
+  padding: 1em;
 }
 
 .fundo-card p{
@@ -104,4 +110,8 @@ footer{
 footer p{
   text-align: center;
   color: #3d3b3b;
+}
+
+.imagem-envio{
+  width: 72px;
 }
